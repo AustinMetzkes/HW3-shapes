@@ -18,8 +18,6 @@ namespace HW3_shapes
 
     {
 
-
-
         public double Side1 { get; set; }
 
         public double Side2 { get; set; }
@@ -29,38 +27,23 @@ namespace HW3_shapes
 
 
         public override double Area
-
         {
-
             get
-
             {
-
                 double s = (Side1 + Side2 + Side3) / 2.0;
 
                 return Math.Sqrt(s * (s - Side1) * (s - Side2) * (s - Side3));
-
             }
-
         }
-
-
 
         public override double Perimeter
 
         {
-
             get
-
             {
-
                 return Side1 + Side2 + Side3;
-
             }
-
         }
-
-
 
         public Triangle(double side1, double side2, double side3, int x = 0, int y = 0)
 
@@ -74,23 +57,8 @@ namespace HW3_shapes
 
 
 
-            //Initialize center position 
-
         }
 
-
-
-
-
-
-
-        /*public Triangle(double b, double h, int x=0, int y=0)
-
-        {
-
-
-
-        }*/
 
 
 

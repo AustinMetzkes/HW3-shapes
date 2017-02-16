@@ -18,5 +18,11 @@ namespace HW3_shapes
         {
 
         }
+
+        static void TestQuadrilateral()
+
+        {
+
+        }
     }
 }
