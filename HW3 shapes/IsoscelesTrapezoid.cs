@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_shapes
 {
-    class IsoscelesTrapezoid : Shape
+    class IsoscelesTrapezoid : Quadrilateral
     {
         public double Base1 { get; set; }
 
@@ -14,40 +14,41 @@ namespace HW3_shapes
 
         public double Altitude { get; set; }
 
-    }
 
-    public override double Area
 
-    {
-
-        get
+        public override double Area
 
         {
-            
-            return (((Base1 + Base2)/2) * Altitude);
 
+            get
+
+            {
+
+                return (((Base1 + Base2) / 2) * Altitude);
+
+            }
         }
-    }
 
-    public override double Perimeter
-
-    {
-
-        get
+        public override double Perimeter
 
         {
-            //figure out perimeter
-            return Side1 + Side2 + Side3 + Side4;
+
+            get
+
+            {
+                //figure out perimeter
+                return Side1 + Side2 + Side3 + Side4;
+
+            }
+        }
+        public IsoscelesTrapezoid(double base1, double base2, double altitude, int x = 0, int y = 0)
+        {
+            Base1 = base1;
+
+            Base2 = base2;
+
+            Altitude = altitude;
 
         }
-    }
-    public IsoscelesTrapezoid(double base1, double base2, double altitude, int x = 0, int y = 0)
-    {
-        Base1 = base1;
-
-        Base2 = base2;
-
-        Altitude = altitude;
-        
     }
 }

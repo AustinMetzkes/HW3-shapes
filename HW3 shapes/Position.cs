@@ -6,12 +6,35 @@ using System.Threading.Tasks;
 
 namespace HW3_shapes
 {
-    // struct class
-    class Position
+    // struct
+    struct Position
+
     {
-        //x
-        //y
-        //constructor, position(int x=0, int y=0)
-            // set this objects (x,y) to (x,y)
+
+        public int x { get; set; }
+
+        public int y { get; set; }
+
+
+
+
+        public Position(int x = 0, int y = 0)
+
+        {
+
+            this.x = x;
+
+            this.y = y;
+
+        }
+
+
+        public override string ToString()
+
+        {
+
+            return $"({x}, {y})";
+
+        }
+
     }
-}

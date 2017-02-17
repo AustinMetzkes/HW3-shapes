@@ -14,26 +14,28 @@ namespace HW3_shapes
 
         public double Circumference { get; }
         //constructor (double radius, int x=0, int y=0)
-    }
 
-    public override double Area
-    {
-        get
-        { 
-            //pi * (r * r)
-            //return Math.Sqrt(s * (s - Side1) * (s - Side2) * (s - Side3));
-        }
-    }
-    public override double Perimeter
 
-    {
-        get
+        public override double Area
         {
-            return Circumference;
+            get
+            {
+                return (Math.PI * (Radius * Radius));
+                //pi * (r * r)
+                //return Math.Sqrt(s * (s - Side1) * (s - Side2) * (s - Side3));
+            }
         }
-    }
-    public Circle (double radius, int x = 0, int y=0)
-    {
-        Radius = radius;
+        public override double Perimeter
+
+        {
+            get
+            {
+                return Circumference;
+            }
+        }
+        public Circle(double radius, int x = 0, int y = 0)
+        {
+            Radius = radius;
+        }
     }
 }

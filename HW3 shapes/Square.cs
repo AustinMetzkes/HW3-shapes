@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_shapes
 {
-    class Square : Quadrilateral
+    class Square : Rectangle
     {
         public double Side
 
@@ -32,6 +32,21 @@ namespace HW3_shapes
 
                 Side4 = Side1;
 
+
+            }
+        }
+        public double l
+        {
+            get
+            {
+                return Side1;
+            }
+        }
+        public double w
+        {
+            get
+            {
+                return Side2;
             }
         }
     }

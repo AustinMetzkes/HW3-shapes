@@ -23,8 +23,7 @@ namespace HW3_shapes
         public double Side2 { get; set; }
 
         public double Side3 { get; set; }
-
-
+    
 
         public override double Area
         {
@@ -46,7 +45,7 @@ namespace HW3_shapes
         }
 
         public Triangle(double side1, double side2, double side3, int x = 0, int y = 0)
-
+            : base(x, y)
         {
 
             Side1 = side1;
@@ -55,8 +54,11 @@ namespace HW3_shapes
 
             Side3 = side3;
 
+        }
 
-
+        public override string ToString()
+        {
+            return $"Sides: {Side1}, {Side2}, {Side3}; Center: {Center}";
         }
 
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_shapes
 {
-    class Quadrilateral : Shape
+    abstract class Quadrilateral : Shape
     {
 
         public double Side1 { get; set; }
@@ -17,44 +17,20 @@ namespace HW3_shapes
 
         public double Side4 { get; set; }
 
-    }
 
-    public override double Area
 
-    {
 
-        get
-
-        {            
-
-            return (Side1 * Side2);
-
-        }
-    }
-
-                public override double Perimeter
-
-    {
-
-        get
-
+        public Quadrilateral(double side1, double side2, double side3, double side4, int x = 0, int y = 0)
         {
+            Side1 = side1;
 
-            return Side1 + Side2 + Side3 + Side4;
+            Side2 = side2;
 
+            Side3 = side3;
+
+            Side4 = side4;
         }
-    }
-
-        public Quadrilateral (double side1, double side2, double side3, double side4, int x = 0, int y = 0)
-    {
-        Side1 = side1;
-
-        Side2 = side2;
-
-        Side3 = side3;
-
-        Side4 = side4;
-    }
 
     }
+}
 
