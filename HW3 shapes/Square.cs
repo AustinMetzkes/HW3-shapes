@@ -49,5 +49,14 @@ namespace HW3_shapes
                 return Side2;
             }
         }
+
+        public Square(double side, int x = 0, int y = 0) : base(side, side, x, y)
+        {
+            Side1 = side;
+        }
+        public override string ToString()
+        {
+            return $"Side: {Side1}; Center: {Center}";
+        }
     }
 }

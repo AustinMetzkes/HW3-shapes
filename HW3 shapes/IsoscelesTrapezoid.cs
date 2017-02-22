@@ -37,7 +37,7 @@ namespace HW3_shapes
 
             {
                 //figure out perimeter
-                return Side1 + Side2 + Side3 + Side4;
+                return (Base1 + Base2 + (Altitude * 2));
 
             }
         }
@@ -49,6 +49,10 @@ namespace HW3_shapes
 
             Altitude = altitude;
 
+        }
+        public override string ToString()
+        {
+            return $"Bases And Height: {Base1}, {Base2}, {Altitude}; Center: {Center}";
         }
     }
 }

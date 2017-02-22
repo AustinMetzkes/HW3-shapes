@@ -76,5 +76,10 @@ namespace HW3_shapes
                 return (Side1 * 6);
             }
         }
+
+        public override string ToString()
+        {
+            return $"Side: {Side1}; Center: {Center}";
+        }
     }
 }

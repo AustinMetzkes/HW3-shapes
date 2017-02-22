@@ -44,32 +44,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Circle.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="Hexagon.cs" />
     <Compile Include="IsoscelesTrapezoid.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quadrilateral.cs" />
-    <Compile Include="Radius.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="RegularHexagon.cs" />
     <Compile Include="right triangle.cs" />
     <Compile Include="Shape.cs" />
     <Compile Include="Square.cs" />
-    <Compile Include="Trapezoid.cs" />
     <Compile Include="triangle.cs" />
-    <Compile Include="View1.xaml.cs">
-      <DependentUpon>View1.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="View1.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

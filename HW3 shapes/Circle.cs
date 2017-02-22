@@ -30,12 +30,17 @@ namespace HW3_shapes
         {
             get
             {
-                return Circumference;
+                return (2 * Math.PI * Radius);
             }
         }
         public Circle(double radius, int x = 0, int y = 0)
         {
             Radius = radius;
+        }
+
+        public override string ToString()
+        {
+            return $"Radius: {Radius}; Center: {Center}";
         }
     }
 }

@@ -33,11 +33,11 @@ namespace HW3_shapes
                 Side4 = Side2;
             }
         }
-        public Rectangle(double l, double w) 
-        {
-            Length = l;
+        public Rectangle(double l, double w, int x = 0, int y = 0) : base(x, y)
 
-            Width = w;
+        {
+            Side1 = l;
+            Side2 = w;
         }
         public override double Area
         {
@@ -52,6 +52,10 @@ namespace HW3_shapes
             {
                 return (Side1 * 4);
             }
+        }
+        public override string ToString()
+        {
+            return $"Sides: {Side1}, {Side2}; Center: {Center}";
         }
     }
 

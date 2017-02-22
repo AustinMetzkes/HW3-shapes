@@ -20,15 +20,12 @@ namespace HW3_shapes
 
 
 
-        public Quadrilateral(double side1, double side2, double side3, double side4, int x = 0, int y = 0)
+        public Quadrilateral(int x = 0, int y = 0) : base(x, y)
+
         {
-            Side1 = side1;
 
-            Side2 = side2;
 
-            Side3 = side3;
 
-            Side4 = side4;
         }
 
     }
